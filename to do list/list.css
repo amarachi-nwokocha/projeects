@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Itim', cursive;
+}
+.container{
+    width: 25rem;
+    height: 40rem;
+    border-radius: 4px;
+    border: 2px solid black;
+    margin-top: rem;
+    margin-left: 15rem;
+    position: center;
+}
+.header{
+    height: 12rem;
+    background-image: url(back.jpg);
+}
+#date{
+    color: white;
+    margin-top: 8rem;
+    font-size: 17px;
+}
+em{
+    color: white;
+    margin-left: 17rem;
+    width:4rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+li{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    list-style: none;
+}
+.text{
+    font-size: 20px;
+    margin-right: 3rem;
+
+}
+button{
+    width: 8rem;
+    height: 30px;
+    background-color: teal;
+    color: white;
+}
+form{
+    position :absolute;
+    bottom :0;
+    Left :20rem;
+    /*margin-top: 25.3rem;
+    border-top: 1px solid;*/
+}
+form button{
+    width: 6rem;
+}
+#item{
+padding: 9px;
+width: 12rem;
+border: 2px black;
+font-size: 1rem;
+}
+input:hover{
+    border: none;
+}
+
+.add-item{
+    margin-top: 20rem; 
+    border-top: 1px solid black;
+    
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+      position: center;
+      margin-bottom: 0px;
+    }
+    
+}

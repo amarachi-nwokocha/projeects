@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: 	hsl(230, 17%, 14%);
+    /* background-color: whitesmoke; */
+    font-family: sans-serif;
+    margin-left: 10rem;
+    position: center;
+
+}
+/* begining of toggle*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+/* end of toggle*/
+/* before first secttion*/
+.logo{
+    color: hsl(228, 34%, 66%);
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    grid-gap: 10px;
+
+}
+.dark{
+    margin-right: 7rem;
+    color: white;
+}
+i{
+    font-size: 23px;
+  color: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+}
+h3{
+    color: white;
+    font-weight: 700;
+}
+
+/*first section*/
+#section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 3rem;
+    grid-column-gap:20px;
+    max-width: 960px;
+    margin-right: 5rem;
+}
+/* each box*/
+.sec1{
+    text-align: center;
+    color: white;
+    background-color: hsl(228, 28%, 20%);
+    width: 15rem;
+    height: 13rem;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 25px 0px 0px 0px;
+    border-radius: 4px;
+    margin-bottom: 4rem;
+}
+.black{
+    text-align: center;
+    width: 15rem;
+    height: 13rem;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 25px 0px 0px 0px;
+    border-radius: 4px;
+    margin-bottom: 4rem;
+}
+.blue{
+    color: hsl(228, 34%, 66%); 
+}
+.numbs{
+    font-weight: 800;
+    font-size: 50px;
+}
+.tag{
+    color: hsl(228, 34%, 66%);
+    letter-spacing: 2px;
+}
+.up{
+    color: hsl(146, 68%, 55%);
+    font-size: 12px;
+}
+.down{
+    color: red;
+    font-size: 12px;
+}
+#sec1:hover{
+    
+}
+/* second section*/
+#section2{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    max-width: 960px;
+    
+}
+.sec2{
+    text-align: center;
+    color: white;
+    background-color: hsl(228, 28%, 20%);
+    width: 16rem;
+    height: 9rem;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 25px 0px 0px 0px;
+    border-radius: 4px;
+
+}
+.space{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 375px) {
+    body{
+       margin-left: 0px;
+    
+    }
+    .head{
+        display: block;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid hsl(228, 34%, 66%);
+        /*margin-left: 30px;*/
+    }
+    #section{
+        display: grid;
+        grid-template-columns: 100%;
+   
+     }
+     #sec1{
+         width:17rem;
+     }
+     #section2{
+        display: grid;
+        grid-template-columns: 100%;
+       
+     }
+     #sec2{
+        width:17rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    body{
+        margin-left: 30px;
+    }
+    #section{
+        display: grid;
+        grid-template-columns: 50%;
+   
+     }
+    }
+
+/* Promise included */
+/* .attribution{
+    margin-top:20px;
+} */
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin-top:20px;
+    font-size: large !important;
+  }
